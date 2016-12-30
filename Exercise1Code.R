@@ -58,6 +58,10 @@ dat2$product_tv <- ifelse(dat2$product_code == "v", 1, 0)
 dat2$product_laptop <- ifelse(dat2$product_code == "x", 1, 0)
 dat2$product_tablet <- ifelse(dat2$product_code == "q", 1, 0)
 
+#Submission instructions include instrux to store results in refine_clean.csv
+write.csv(dat2, file = "refine_clean.csv")
+
+
 
 #Installed and set up git/github when I had a working draft of exercise
 # ref see http://r-pkgs.had.co.nz/git.html
